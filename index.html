@@ -3,166 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Divyansh's Website</title>
-    <link rel="icon" type="image/png" href="img/dp.jpg">
-    <!-- Added Font Awesome and Google Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-    
+    <title>Divyansh's Homepage</title>
+    <link rel="icon" href="img/d-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body, html {
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            font-family: 'Merriweather', serif; /* Changed font to Merriweather, a serif font */
-            font-size: small;
-            line-height: 1.3;
-            color: #333;
         }
         .header {
-            background-image: url('img/flight.jpg');
+            background-color: #f4f4f4;
+            padding: 1rem;
+            text-align: right;
+        }
+        .header a {
+            margin-left: 1rem;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 300px;
+            background-image: url('img/flight2-cropped.jpg');
             background-size: cover;
             background-position: center;
-            height: 460px;
-            scale: 1;
             position: relative;
         }
-        .nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px 0;
-            position: absolute;
-            top: 0;
-            width: 100%;
-            text-align: center;
-        }
-        .nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 0 15px;
-            font-weight: bold;
-        }
         .content {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between; /* Adds space between flex items */
-            align-items: flex-start; /* Aligns items to the top */
-            margin-left: 15%;
-            margin-right: 15%;
+            padding: 2rem;
         }
         .profile {
-            width: 250px;
-            text-align: center;
-            background-color: #f8f9fa;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 0 auto;
-            /* margin-left: 0; */
-        }
-
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .profile h1 {
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-size: 1.5em;
+            flex: 1;
+            min-width: 10%;
+            /* margin-right: 2rem; */
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         .info {
-            flex: 0 0 65%; /* Takes up 65% of the container width */
-            /* min-width: 300px; */
-            margin-left: 5%;
+            flex: 2;
+            min-width: 300px;
+            /* margin-right: 10%; */
+        }
+        .profile img {
+            max-width: 50%;
+            border-radius: 5%;
         }
         .profile p {
-            margin: 10px 0;
-            font-size: 0.85em;
-            line-height: 1.4;
-            font-style: italic;
+            margin-top: -3%;
+            max-width: 60%;
+            text-align: center;
+            font-size: small;
         }
         .social-links {
-            margin-top: 15px;
+            /* margin-top: 1rem; */
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 10px;
         }
-
-        .social-links a {
-            display: inline-block;
-            margin: 5px;
-            color: #333;
+        .social-links-grid {
+            display: flex;
+            gap: 20px;
+            max-width: 400px; /* Adjust as needed */
+        }
+        .social-links-column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            flex: 1;
+        }
+        /* .social-links a {
+            margin-right: 1rem;
             text-decoration: none;
-            font-size: 0.9em;
+            color: #333;
+        } */
+        .social-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: small;
         }
-
-        .social-links i {
-            margin-right: 5px;
+        .social-link:hover {
+            background-color: #f0f0f0;
         }
-        h2 {
-            margin-top: 15px;
+        .social-link span {
+            font-size: small;
+            text-decoration: none;
+            color: inherit;
         }
-        .footer {
+        .social-link i {
+            width: 20px;
+            margin-right: 10px;
+            font-size: small;
+        }
+        footer {
+            /* background-color: #f4f4f4; */
             text-align: center;
-            font-size: 0.8em;
-            padding: 10px 0;
-            background-color: #f8f9fa;
+            padding: 1rem;
+            /* position: absolute; */
+            bottom: 0;
+            width: 100%;
         }
-        /* Add some responsive adjustments */
-        @media (max-width: 768px) {
+        /* Add this new style to create gap */
+        @media (min-width: 100px) {
             .content {
-                flex-direction: column;
-            }
-            .profile, .info {
-                flex: 1 0 100%;
-                margin-right: 0;
-                margin-bottom: 20px;
+                gap: 2rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <nav class="nav">
-            <a href="#research">EDUCATION</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#publications">PUBLICATIONS</a>
-            <a href="#leadership">LEADERSHIP</a>
-        </nav>
+        <a href="#research"><strong>EDUCATION</strong></a>
+        <a href="#projects"><strong>PROJECTS</strong></a>
+        <a href="#publications"><strong>PUBLICATIONS</strong></a>
+        <a href="#publications"><strong>BLOGS</strong></a>
+        <!-- <a href="#leadership">LEADERSHIP</a> -->
     </div>
+
+    <div class="cover-photo"></div>
 
     <div class="content">
         <div class="profile">
-            <img src="img/dp.jpg" alt="Divyansh">
-            <h1>Divyansh</h1>
-            <p>Born in Khagaria, Bihar & completed my studies from Deoghar (Jharkhand), Kota (Rajasthan) & Kanpur (UP). Currently interested in Machine Learning, performance & optimistic tech in general.</p>
-            <div class="social-links">
-                <a href="mailto:singhdivyansh1910@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://github.com/Divyanshsingh1910"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://linkedin.com/in/divyansh1910"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <!-- <a href="https://google.com"><i class="fab fa-google"></i> Google</a> -->
+            <img src="img/dp2.jpg" alt="Divyansh">
+            <h2>Divyansh</h2>
+            <p> <i>Born in Khagaria, Bihar & completed my studies from Deoghar (Jharkhand), Kota (Rajasthan) & Kanpur (UP). 
+                Currently interested in Machine Learning, performance & optimistic tech in general.</i></p>
+            <!-- <div class="social-links">
+                <a href="mailto:singhdivyansh1910@gmail.com">Email</a>
+                <a href="https://github.com/Divyanshsingh1910">GitHub</a>
+                <a href="https://linkedin.com/in/divyansh1910">LinkedIn</a>
+                <a href="https://x.com/_divyansh1910">Twitter(X)</a>
+            </div> -->
+            <div class="social-links-grid">
+                <div class="social-links-column">
+                  <a href="mailto:singhdivyansh1910@gmail.com">
+                    <div class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </div>
+                  </a>
+                  <a href="https://github.com/Divyanshsingh1910">
+                    <div class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="social-links-column">
+                  <a href="https://linkedin.com/in/divyansh1910">
+                    <div class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </div>
+                  </a>
+                  <a href="https://x.com/_divyansh1910">
+                    <div class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </div>
+                  </a>
+                </div>
             </div>
+              
         </div>
+
         <div class="info">
-            <h1>Hi There, Welcome!</h1>
-            <p>I am completing my B.Tech. studies at the <strong>Indian Institute of Technology Kanpur</strong> in <strong>CS</strong> department, where I have been fortunate to explore things which I have started to admire a lot.</p>
-            <p>I have worked around socially-situated <strong>human-centered NLP/AI technologies</strong> to extend impact of my works. I also got chance of understand the fundamental architectures of <strong>LLMs</strong> and tweak around them.</p>
-            <p>Apart from these, I also have interest in <strong>systems engineering</strong> - operating systems and performance computing to name a few. I also like to follow fascinating tech advancements in general.</p>
+            <h2>Hi There, Welcome!</h2>
+            <p>I am completing my B.Tech. studies at the <strong>Indian Institute of Technology Kanpur</strong> in <strong>CS</strong> department, 
+                where I have been fortunate to explore things which I have started to admire a lot.</p>
+            <p>I have worked around socially-situated <strong>human-centered NLP/AI technologies</strong> to extend impact of my works. I also got
+                 chance of understand the fundamental architectures of <strong>LLMs</strong> and tweak around them.</p>
+            <p>Apart from these, I also have interest in <strong>systems engineering</strong> - operating systems and performance computing to name a few.
+                 I also like to follow fascinating tech advancements in general.</p>
             <h3>Recent News:</h3>
             <ul>
                 <li><strong>[July 2024]</strong> Completed Research Internship at Adobe Systems, focusing on multimodal attribution for AI systems.</li>
-                <!-- <li><strong>[Jan 2024]</strong> Working on Full Fork implementation in the Linux Kernel as part of the CS614 course project.</li> -->
             </ul>
         </div>
     </div>
 
-    <footer class="footer">
+    <footer>
         © 2024 Divyansh. All rights reserved.
     </footer>
 </body>

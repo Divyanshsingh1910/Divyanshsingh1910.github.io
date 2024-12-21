@@ -11,8 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- FONT -->
-    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet">
+    <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Vollkorn" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
           integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
@@ -33,7 +34,7 @@
     <nav class="navbar">
         <ul class="navbar-list">
             <li class="navbar-item"><a href="/">Home</a></li>
-            <li class="navbar-item"><a href="/blog">Blog</a>&nbsp;&nbsp;&nbsp;</li>
+            <li class="navbar-item"><a href="/">Blog</a>&nbsp;&nbsp;&nbsp;</li>
         </ul>
     </nav>
     <div class="row" style="margin-top: 1%">
@@ -87,10 +88,25 @@
 
             <div class="row publication">
                 <div class="pub-image four columns">
+                    <img src="img/fiqa-challenge.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title"><a href="https://github.com/Divyanshsingh1910/fiqa-2018-target-based-multi-aspect-classification">FIQA-Challenges: Aspect based sentiment analysis</a></span>
+                    <div class="pub-authors">
+                         <span class="fw6">Presentation</span>: Fine-tune BERT + Multi-head attention on aspect for sentiment extraction.
+                    </div>
+                    <div class="pub-venue">
+                         Barclays Case Study Competition | Nov'24
+                    </div>
+                </div>
+            </div>
+
+            <div class="row publication">
+                <div class="pub-image four columns">
                     <img src="img/linux-kernel.png">
                 </div>
                 <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="projects.html">Full Fork in Linux Kernel</a></span>
+                    <span class="pub-title"><a href="https://github.com/Divyanshsingh1910/full-fork-linux-kernel">Full Fork in Linux Kernel</a></span>
                     <div class="pub-authors">
                          <span class="fw6">Course Project</span>: Developed fork functionality for cloning multi-threaded processes, where 
                          all the threads get cloned.
@@ -106,7 +122,7 @@
                     <img src="img/compiler.png">
                 </div>
                 <div class="pub-desc eight columns">
-                    <span class="pub-title"><a href="projects.html">Sankalak-Python Compiler</a></span>
+                    <span class="pub-title"><a href="https://github.com/Divyanshsingh1910/sankalak-python-compiler">Sankalak-Python Compiler</a></span>
                     <div class="pub-authors">
                          <span class="fw6">Course Project</span>: Developed compiler for statically typed Python subset targeting x86_64 from scratch in C++. 
                          Implemented lexical analysis, syntactic analysis, symbol table, and code generation.
@@ -117,8 +133,64 @@
                 </div>
             </div>
 
-            <!-- Continue with other projects following the same pattern -->
-            <!-- Add more project divs here -->
+            <div class="row publication">
+                <div class="pub-image four columns">
+                    <img src="img/satellite.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title"><a href="https://github.com/Divyanshsingh1910/CDIS_Satellite_Imagery_Analysis">Poverty Estimation in Haryana</a></span>
+                    <div class="pub-authors">
+                         <span class="fw6">Project Lead</span>: Using deep features from satellite-imagery and Open-street map data to predict household income in Haryana.
+                    </div>
+                    <div class="pub-venue">
+                         CDIS | ICG | Aug'23-Apr'24
+                    </div>
+                </div>
+            </div>
+
+            <div class="row publication">
+                <div class="pub-image four columns">
+                    <img src="img/medical.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title"><a href="projects.html">Medical AI Assistant</a></span>
+                    <div class="pub-authors">
+                         <span class="fw6">Project Lead</span>: Engineered multilingual medical query retrieval system to answer patient's medical queries.
+                    </div>
+                    <div class="pub-venue">
+                         Noora Health | ICG | Dec'23-May'24
+                    </div>
+                </div>
+            </div>
+            <div class="row publication">
+                <div class="pub-image four columns">
+                    <img src="img/portal.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title"><a href="https://github.com/Divyanshsingh1910/Django-Unifiied-Portal-For-Hall-Automation">Unified Portal for Hostel-Automation</a></span>
+                    <div class="pub-authors">
+                         <span class="fw6">Course Project</span>: Developed a web app digitalizing hostel services mess, booking, and maintenance.
+                    </div>
+                    <div class="pub-venue">
+                         IIT Kanpur | Prof. Indranil Saha | Jan'23-Apr'23
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="row publication">
+                <div class="pub-image four columns">
+                    <img src="img/pre-hospital.png">
+                </div>
+                <div class="pub-desc eight columns">
+                    <span class="pub-title"><a href="projects.html">Pre-Hospital Management System(PHMS)</a></span>
+                    <div class="pub-authors">
+                         <span class="fw6">Research Project</span>: Developed Frame Compression and Prediction Techniques for Efficient Video Transmission from ambulance in low network areas. Employed Ffmpeg to extract frames of patient's video for compression further used CNN based ESPCN model to reconstruct high resolution video frames.
+                    </div>
+                    <div class="pub-venue">
+                         Prof. Priyanka Bagade, CSE, IITK | Sept'22-May'23
+                    </div>
+                </div>
+            </div> -->
 
         </div>
     </div>

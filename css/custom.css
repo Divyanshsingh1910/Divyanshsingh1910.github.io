@@ -1,5 +1,5 @@
 body {
-    font-size: 2.0rem;
+    font-size: 1.9rem;
 }
 
 @font-face {
@@ -115,14 +115,16 @@ a:hover {
 }
 
 .pub-image {
-    height: 120px;
+    /* height: 120px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .pub-image img {
-    max-height: 110px;
+    /* max-height: 110px; */
+    max-width: 160px;
+    /* height: 100%; */
 }
 
 .pub-venue {
@@ -144,4 +146,10 @@ a:hover {
 
 .fw6 {
     font-weight: 600;
+}
+
+/* Social and academic icons size and spacing adjustment */
+.fab, .ai {
+    font-size: 1.2em;
+    margin: 0 3px;
 }
